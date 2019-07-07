@@ -8,17 +8,21 @@ class RomanNumeral {
       5: 'V',
       9: 'IX',
       10: 'X',
+      20: 'XX',
+      30: 'XXX',
+      40: 'XL',
+      50: 'L',
+      90: 'XC',
     };
     this.keys = Object.keys(this.romanNumeralValues).reverse();
   }
 
   convert(value) {
     let result = '';
-    let countValue = value;
     this.keys.forEach((number) => {
-      if (number <= countValue) {
+      if (value >= number) {
         result += this.romanNumeralValues[number];
-        countValue -= number;
+        value -= number;
       }
     });
     return result;

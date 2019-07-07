@@ -33,4 +33,34 @@ describe('Roman numberal converter', () => {
   it('Should convert 10 into roman numeral', () => {
     expect(converter.convert(10)).toBe('X');
   });
+  it('Should convert 11 into roman numeral', () => {
+    expect(converter.convert(11)).toBe('XI');
+  });
+  it('Should convert 12 into roman numeral', () => {
+    expect(converter.convert(12)).toBe('XII');
+  });
+  it('Should convert 15 into roman numeral', () => {
+    expect(converter.convert(15)).toBe('XV');
+  });
+  it('Should convert 18 into roman numeral', () => {
+    expect(converter.convert(18)).toBe('XVIII');
+  });
+  it('Should convert 20 into roman numeral', () => {
+    expect(converter.convert(20)).toBe('XX');
+  });
+  it('Should convert 30 into roman numeral', () => {
+    expect(converter.convert(30)).toBe('XXX');
+  });
+  it('Should convert 40 into roman numeral', () => {
+    expect(converter.convert(40)).toBe('XL');
+  });
+  it('Should convert 50 into roman numeral', () => {
+    expect(converter.convert(50)).toBe('L');
+  });
+  it('Should convert 60 into roman numeral', () => {
+    expect(converter.convert(60)).toBe('LX');
+  });
+  it('Should convert 90 into roman numeral', () => {
+    expect(converter.convert(90)).toBe('XC');
+  });
 });
