@@ -98,5 +98,11 @@ describe('Roman numberal converter', () => {
     it('Should convert 123 into roman numeral', () => {
       expect(converter.convert(123)).toBe('CXXIII');
     });
+    it('Should convert 2539 into roman numeral', () => {
+      expect(converter.convert(2539)).toBe('MMDXXXIX');
+    });
+    it('Should convert 622 into roman numeral', () => {
+      expect(converter.convert(622)).toBe('DCXXII');
+    });
   });
 });
