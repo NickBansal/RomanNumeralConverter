@@ -1,11 +1,7 @@
 class RomanNumeral {
-  constructor(options) {
-    this.options = options;
-  }
-
-  sayHi() {
-    return 'Hello';
-  }
+    convert(value) {
+        return "I"
+    }
 }
 
 module.exports = RomanNumeral;
