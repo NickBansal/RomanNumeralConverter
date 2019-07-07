@@ -1,4 +1,4 @@
-class RomanNumeral {
+module.exports = class RomanNumeral {
   constructor() {
     this.romanNumeralValues = {
       1: 'I',
@@ -13,20 +13,28 @@ class RomanNumeral {
       40: 'XL',
       50: 'L',
       90: 'XC',
+      100: 'C',
+      200: 'CC',
+      300: 'CCC',
+      400: 'CD',
+      500: 'D',
+      900: 'CM',
+      1000: 'M',
+      2000: 'MM',
+      3000: 'MMM',
     };
     this.keys = Object.keys(this.romanNumeralValues).reverse();
   }
 
   convert(value) {
     let result = '';
+    let countValue = value;
     this.keys.forEach((number) => {
-      if (value >= number) {
+      if (countValue >= number) {
         result += this.romanNumeralValues[number];
-        value -= number;
+        countValue -= number;
       }
     });
     return result;
   }
-}
-
-module.exports = RomanNumeral;
+};

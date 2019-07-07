@@ -63,4 +63,34 @@ describe('Roman numberal converter', () => {
   it('Should convert 90 into roman numeral', () => {
     expect(converter.convert(90)).toBe('XC');
   });
+  it('Should convert 100 into roman numeral', () => {
+    expect(converter.convert(100)).toBe('C');
+  });
+  it('Should convert 200 into roman numeral', () => {
+    expect(converter.convert(200)).toBe('CC');
+  });
+  it('Should convert 300 into roman numeral', () => {
+    expect(converter.convert(300)).toBe('CCC');
+  });
+  it('Should convert 400 into roman numeral', () => {
+    expect(converter.convert(400)).toBe('CD');
+  });
+  it('Should convert 500 into roman numeral', () => {
+    expect(converter.convert(500)).toBe('D');
+  });
+  it('Should convert 900 into roman numeral', () => {
+    expect(converter.convert(900)).toBe('CM');
+  });
+  it('Should convert 1000 into roman numeral', () => {
+    expect(converter.convert(1000)).toBe('M');
+  });
+  it('Should convert 2000 into roman numeral', () => {
+    expect(converter.convert(2000)).toBe('MM');
+  });
+  it('Should convert 3000 into roman numeral', () => {
+    expect(converter.convert(3000)).toBe('MMM');
+  });
+  it('Should convert 3999 into roman numeral', () => {
+    expect(converter.convert(3999)).toBe('MMMCMXCIX');
+  });
 });
