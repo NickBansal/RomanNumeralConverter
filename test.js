@@ -93,4 +93,10 @@ describe('Roman numberal converter', () => {
   it('Should convert 3999 into roman numeral', () => {
     expect(converter.convert(3999)).toBe('MMMCMXCIX');
   });
+
+  describe('Unusual values', () => {
+    it('Should convert 123 into roman numeral', () => {
+      expect(converter.convert(123)).toBe('CXXIII');
+    });
+  });
 });
